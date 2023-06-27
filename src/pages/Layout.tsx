@@ -4,9 +4,9 @@ import { Footer } from '../components/Footer';
 
 export const Layout = () => {
   return (
-    <div>
-      <Header/>
-      <Outlet/>
+    <div className=''>
+      <Header />
+      <Outlet />
       <Footer />
     </div>
   )

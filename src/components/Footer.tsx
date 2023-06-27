@@ -1,15 +1,18 @@
+import { EmailContainer } from "./EmailContainer";
+import { SubscribeContainer } from "./SubscribeContainer";
+import { Image } from "./reusable/Image";
 
 export const Footer = () => {
+  console.log("HERE", process.env)
   return (
-    <div className="w-full h-fit flex justify-between bg-primary-300 text-ttt-200">
-      <div className="pl-4">Kai Care & Wellness</div>
-      <div className="flex pr-2">
-        <p className="px-2">About</p>
-        <p className="px-2">Kai</p>
-        <p className="px-2">Blog</p>
-        <p className="px-2">Podcast</p>
-        <p className="px-2">Recipes</p>
-        <p className="px-2">Contact</p>
+    <div className="w-full py-10 h-fit flex justify-around bg-primary-300 text-ttt-200">
+      <SubscribeContainer />
+      <EmailContainer />
+      <div className=" flex ">
+        <Image src={`/img/facebook.svg`}/>
+        <Image src={`/img/instagram.svg`}/>
+        <Image src={`/img/linkedin.svg`}/>
+        <Image src={`/img/pinterest.svg`}/>
       </div>
     </div>
   )

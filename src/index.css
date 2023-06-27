@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  height: 100%;
-  width: 100%;
+@layer base {
+  html {
+    height: 100%;
+    width: 100%;
+    font-family: Dosis, system-ui, sans-serif;
+  }
 }
 body {
   height: 100%;
@@ -14,4 +17,36 @@ body {
 #root {
   height: 100%;
   width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #704734;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #552b18;
+  border-radius: 3px;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #e0eaea;
+    transition: background-color 5000s ease-in-out 0s;
 }

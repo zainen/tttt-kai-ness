@@ -24,8 +24,11 @@ module.exports = {
         300: '#b8c1c1',
       }
     },
+    fontFamily: {
+      sans: ['Dosis', 'sans-serif']
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 }
 
