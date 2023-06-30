@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+import 'dotenv/config'
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}"
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     colors: {
@@ -18,7 +19,7 @@ module.exports = {
       text: {
 
       },
-      ttt: {
+      tttt: {
         100: '#EAF4F4',
         200: '#e0eaea',
         300: '#b8c1c1',
@@ -27,8 +28,16 @@ module.exports = {
     fontFamily: {
       sans: ['Dosis', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'veggie': `url("${process.env.URL}/img/veggie-bg.jpg")`
+      }
+    },
   },
-  plugins: [require('tailwind-scrollbar')],
+  plugins: [
+    require('tailwind-scrollbar'),
+
+  ],
+
 }
 

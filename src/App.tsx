@@ -11,7 +11,7 @@ import { PageNotFound } from "./pages/PageNotFound";
 
 function App() {
   return (
-    <div className="bg-primary-400 ">
+    <div className="bg-primary-400 overflow-auto">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout/>}>

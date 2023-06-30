@@ -1,11 +1,9 @@
 import { PropsWithChildren } from "react";
 
-export const Card = (props: PropsWithChildren<{ className?: string }>) => {
+export const Card = (props: PropsWithChildren<{ className?: string; rounded?: boolean }>) => {
   return (
-    <div className={`${props.className}`}>
-      <div className="p-4 border rounded-xl bg-ttt-100 shadow-lg border-accent-200">
-        {props.children}
-      </div>
+    <div className={`p-4 border shadow-lg border-accent-200 ${props.className} ${props.rounded ? 'rounded-xl' : ''}`}>
+      {props.children}
     </div>
   )
 }

@@ -4,7 +4,7 @@ import { Footer } from '../components/Footer';
 
 export const Layout = () => {
   return (
-    <div className=''>
+    <div className='overflow-auto'>
       <Header />
       <Outlet />
       <Footer />

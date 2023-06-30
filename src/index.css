@@ -7,16 +7,20 @@
     height: 100%;
     width: 100%;
     font-family: Dosis, system-ui, sans-serif;
+    overflow: auto;
   }
 }
 body {
   height: 100%;
   width: 100%;
+  overflow: auto;
 }
 
 #root {
   height: 100%;
   width: 100%;
+  overflow: auto;
+
 }
 
 /* width */
