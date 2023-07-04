@@ -8,9 +8,9 @@ import { Blogs } from "./pages/Blogs";
 import { Contact} from './pages/Contact';
 import { PageNotFound } from "./pages/PageNotFound";
 import { Podcasts } from "./pages/Podcasts";
-// import { Card } from "./components/reusable/Card";
 
 function App() {
+
   return (
     <div className="bg-primary-400 overflow-auto">
       <BrowserRouter>
