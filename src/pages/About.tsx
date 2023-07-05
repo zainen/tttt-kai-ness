@@ -6,7 +6,7 @@ export const About = () => {
       <div className='flex flex-col justify-center items-center'>
 
       <h2 className='text-3xl'>Meet Tysia</h2>
-      <h4 className='text-xl'>Health and Wellness Coach | Nutrition Expert</h4>
+      <h4 className='text-xl'>Health and Wellness Coach | Holistic Nutritionist</h4>
       </div>
       <Card className='text-primary-400 m-4 w-full flex flex-col justify-center md:flex-row items-center text-lg bg-tttt-100' >
         <img className="object-contain object-center md:w-1/2 w-3/4"  src="https://www.shutterstock.com/image-photo/3d-image-neon-abstract-600w-2258892637.jpg" alt="AI" />
