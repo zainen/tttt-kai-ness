@@ -1,6 +1,6 @@
-import { EmailContainer } from "./EmailContainer";
+import { EmailContainer } from "../EmailContainer";
 import { SubscribeContainer } from "./SubscribeContainer";
-import { Image } from "./reusable/Image";
+import { Image } from "../reusable/Image";
 
 export const Footer = () => {
   return (

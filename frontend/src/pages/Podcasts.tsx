@@ -1,4 +1,4 @@
-import { PodcastSpotify, PodcastYoutube } from "../components/IframeHolder";
+import { PodcastSpotify, PodcastYoutube } from "../components/reusable/IframeHolder";
 
 export const Podcasts = () => {
   return (

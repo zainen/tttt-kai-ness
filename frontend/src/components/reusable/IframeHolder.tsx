@@ -1,4 +1,4 @@
-import { Card } from "./reusable/Card";
+import { Card } from "./Card";
 
 export const PodcastYoutube = (props: { url: string; orderReverse?: boolean; title: string; description: string; }) => {
   return (

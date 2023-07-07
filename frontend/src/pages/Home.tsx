@@ -1,4 +1,5 @@
 import { Bookings } from "../components/Bookings";
+import { Body } from "../components/containers/Body";
 import { Button } from "../components/reusable/Button";
 import { Card } from "../components/reusable/Card";
 import { Image } from "../components/reusable/Image";
@@ -7,10 +8,10 @@ import { Section } from "../components/reusable/Section";
 export const Home = () => {
   return (
     <>
-      <div className="h-full w-full flex flex-col items-center">
+      <Body className="flex flex-col items-center">
         <Section className="lg:max-w-4/5 w-full bg-tttt-100 flex">
           <div className="p-4 flex flex-col md:flex-row justify-center items-center">
-            <Image className=" object-scale-down object w-1/2" src={`/img/portrait-holder.jpg`} alt="first" />
+            <Image className=" object-scale-down object w-3/4 md:w-1/2" src={`/img/portrait-holder.jpg`} alt="first" />
             <div className="w-full text-2xl px-6 py-4 flex flex-col items-center ">
               <h2 className="font-extrabold text-3xl text-primary-300 text-center">A Healthy Life That Works For Your Lifestyle</h2>
               <div className="pt-4 flex flex-col items-center ">
@@ -32,7 +33,7 @@ export const Home = () => {
                 </a>
               </div>
             </div>
-            <Image className=" object-scale-down object w-1/2" src={`/img/portrait-holder2.jpg`} alt="second" />
+            <Image className=" object-scale-down object w-3/4 md:w-1/2" src={`/img/portrait-holder2.jpg`} alt="second" />
           </div>
         </Section>
         <Section className="lg:max-w-4/5 w-full bg-tttt-200 flex flex-col md:flex-row">
@@ -97,7 +98,7 @@ export const Home = () => {
             <img src="./img/coming-soon-kai.jpg" alt="coming soon to kai health & wellness" />
           </div>
         </Section>
-      </div>
+      </Body>
     </>
   )
 }

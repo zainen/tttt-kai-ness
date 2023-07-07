@@ -1,7 +1,7 @@
 import { Button } from "./reusable/Button";
 import { TextInput } from "./reusable/TextInput";
 import { useState } from "react";
-
+import 'dotenv/config';
 
 export const EmailContainer = () => {
   const [firstName, setFirstName] = useState('');
@@ -11,12 +11,23 @@ export const EmailContainer = () => {
   const [message, setMessage] = useState('');
   const handleSendEmail = async () => {
     const params = {
-      from_name: firstName + lastName,
-      from_email: email,
-      from_phone: phoneNumber,
+      name: firstName + lastName,
+      email,
+      phone: phoneNumber,
       message
     }
     try {
+      const result = await fetch(process.env.EMAIL_SERVICE ?? '', {
+        method: 'POST',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(params)
+      })
+      console.log(result)
     } catch (err) {
       console.log('todo', err)
     }

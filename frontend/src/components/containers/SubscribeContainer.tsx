@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "./reusable/Button";
-import { TextInput } from "./reusable/TextInput";
+import { Button } from "../reusable/Button";
+import { TextInput } from "../reusable/TextInput";
 
 export const SubscribeContainer = () => {
   const [name, setName] = useState("");
