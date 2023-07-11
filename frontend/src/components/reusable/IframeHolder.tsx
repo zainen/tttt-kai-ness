@@ -2,7 +2,7 @@ import { Card } from "./Card";
 
 export const PodcastYoutube = (props: { url: string; orderReverse?: boolean; title: string; description: string; }) => {
   return (
-    <Card className={`m-4 bg-primary-100 flex flex-col justify-center items-center md:flex-row ${props.orderReverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
+    <Card className={`mt-6 lg:my-12 px-4 md:px-8 bg-primary-100 flex flex-col justify-center items-center md:flex-row ${props.orderReverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
       <iframe 
         className="w-full h-60"
         src={props.url} 
@@ -20,7 +20,7 @@ export const PodcastYoutube = (props: { url: string; orderReverse?: boolean; tit
 
 export const PodcastSpotify = (props: { url: string; orderReverse?: boolean; title: string; description: string; }) => {
   return (
-    <Card className={`m-4 bg-primary-100 flex flex-col justify-center items-center md:flex-row ${props.orderReverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
+    <Card className={`mt-6 lg:mt-12 px-4 md:px-8 bg-primary-100 flex flex-col justify-center items-center md:flex-row ${props.orderReverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
       <iframe 
         style={{borderRadius: '12px'}}
         src={props.url} 

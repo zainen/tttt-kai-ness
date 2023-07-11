@@ -1,7 +1,7 @@
-export const Image = (props: {src: string; alt?: string; className?: string}) => {
+export const Image = (props: {src: string; alt?: string; className?: string; svgFill?: string;}) => {
   return (
     <div className={props.className}>
-      <img src={props.src} alt={props.alt} />
+      <img className={props.svgFill} src={props.src} alt={props.alt} />
     </div>
   )
 }

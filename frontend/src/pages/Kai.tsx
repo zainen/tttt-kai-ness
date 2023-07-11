@@ -4,7 +4,7 @@ import { SectionHeader } from "../components/reusable/SectionHeader";
 
 export const Kai = () => {
   return (
-    <div className="w-full text-tttt-100 flex flex-col items-center">
+    <div className="w-full px-6 lg:px-12 text-tttt-100 flex flex-col items-center">
       <SectionHeader>
         <div className="md:w-1/2 px-10 md:px-0 pb-6 pt-8 text-center">
 

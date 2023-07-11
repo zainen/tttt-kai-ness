@@ -4,6 +4,7 @@ export const TextInput = ({
   name,
   label,
   className,
+  borderColour,
   handler,
   textArea = false,
   containerClassName,
@@ -15,6 +16,7 @@ export const TextInput = ({
   handler?: (value: string) => void;
   label?: string;
   className?: string;
+  borderColour:  string;
   textArea?: boolean;
   containerClassName?: string;
   state: string;
@@ -25,23 +27,23 @@ export const TextInput = ({
     <>
       {textArea ? (
         <div className={`flex flex-col w-full ${containerClassName}`}>
-          <label>{label}</label>
+          <label className="font-semibold">{label}</label>
           <textarea
             required={required}
             name={name}
             value={state}
-            className={`resize-none md:h-36 h-20 bg-primary-300 border-b focus:outline-none border-b-tttt-100 overflow-visible sscrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-300 ${className}`}
+            className={`resize-none md:h-36 h-20  border-b focus:outline-none border-b-${borderColour}-100 overflow-visible scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-300 ${className}`}
             onChange={(e) => setState(e.target.value)}
           />
         </div>
       ) : (
         <div className={`flex flex-col w-full ${containerClassName}`}>
-          <label>{label}</label>
+          <label className="font-semibold">{label}</label>
           <input
             required={required}
             name={name}
             value={state}
-            className={`bg-primary-300 border-b focus:outline-none border-b-tttt-100 ${className}`}
+            className={` border-b focus:outline-none border-b-${borderColour}-100 ${className}`}
             type="text"
             onChange={handler ? (e) => handler(e.target.value) : (e) => setState(e.target.value)}
           />

@@ -2,6 +2,7 @@ import express from 'express';
 import path from 'path';
 import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
+import cors from 'cors'
 import 'dotenv/config'
 
 const PORT = process.env.PORT || 5000
@@ -11,6 +12,7 @@ const app = express();
 app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+app.use(cors())
 
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
@@ -21,7 +23,7 @@ const transporter = nodemailer.createTransport({
 })
 
 
-transporter.verify((error, success) => {
+transporter.verify((error, _success) => {
   if (error) {
     console.log(error);
   } else {
@@ -29,11 +31,17 @@ transporter.verify((error, success) => {
   }
 });
 
-app.post('/post', (req, res) => {
+app.options('/post', (req, res) => {
+  res.status(204).json({})
+})
+
+app.post<{}>('/post', async (req, res) => {
+  // console.log(req)
+console.log('received q ')
 
   const email = req.body.email
   const message = req.body.message
-  const content = `From: ${req.body.name} \nEmail: ${email} \nMessage Inquiry: \n\t${message}`
+  const content = `From: ${req.body.name} \nEmail: ${email} \nPhone Number: ${req.body.phone} \nMessage Inquiry: \n\t${message}`
 
   const mail = {
     from: req.body.email,
@@ -43,14 +51,14 @@ app.post('/post', (req, res) => {
     text: content,
 
   }
-  transporter.sendMail(mail, (err, _) => {
+  await transporter.sendMail(mail, (err, _) => {
     if (err) {
-      res.json({
-        status: "fail",
+      res.status(400).json({
+        body: 'failed to send'
       })
     } else {
-      res.json({
-        status: "success"
+      res.status(200).json({
+        body: 'sent'
       })
     }
   })

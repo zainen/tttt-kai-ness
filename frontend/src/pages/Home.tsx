@@ -91,7 +91,7 @@ export const Home = () => {
           <h2 className="text-center text-3xl p-6 md:p-10 text-primary-300 font-bold">Let’s Get Healthy</h2>
           <Bookings />
         </Section>
-        <Section className="lg:max-w-4/5 w-full bg-primary-200 flex flex-col justify-center items-center pb-8">
+        <Section className="lg:max-w-4/5 w-full bg-primary-300 flex flex-col justify-center items-center pb-8">
           <h2 className="text-center text-3xl p-6 md:p-10 text-tttt-200 font-bold">The Kai Care & Wellness Feed</h2>
           <div className="max-w-lg">
 
