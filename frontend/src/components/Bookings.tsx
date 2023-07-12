@@ -3,7 +3,7 @@ import { Card } from "./reusable/Card";
 
 export const Bookings = () => {
   return (
-    <div className="w-full">
+    <div className="w-full pb-4">
       <div className="flex flex-row items-center justify-center">
         <img className='w-1/2 object-cover object-center max-h-80 p-2' src="./img/blank-card.jpg" alt="blank recipe card"/>
         <Card rounded={false} className="h-fit w-80 -translate-x-20 bg-primary-100 text-primary-400 p-8 md:p-12" >

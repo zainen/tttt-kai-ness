@@ -16,7 +16,7 @@ export const Home = () => {
               <h2 className="font-extrabold text-3xl text-primary-300 text-center">A Healthy Life That Works For Your Lifestyle</h2>
               <div className="pt-4 flex flex-col items-center ">
 
-                <p className="py-2 text-primary-300 text-center">Online Health Coaching with Tysia Suzuki</p>
+                <p className="py-2 text-primary-300 text-center font-semibold">Online Health Coaching with Tysia Suzuki</p>
                 <Button colour="primary" className='text-tttt-200 px-4 max-w-fit' action={() => (alert("todo"))}>Discover</Button>
               </div>
             </div>
@@ -26,7 +26,7 @@ export const Home = () => {
           <div className="p-4 flex flex-col md:flex-row justify-center items-center">
             <div className="w-full text-2xl px-6 py-4 flex flex-col items-center ">
               <h2 className="font-extrabold text-3xl text-tttt-200 text-center">Meet Tysia</h2>
-              <h2 className="font-bold text-xl pt-4 text-tttt-300 text-center">Health and Wellness Coach | Nutrition Expert</h2>
+              <h2 className="font-semibold text-xl pt-4 text-tttt-300 text-center">Health and Wellness Coach | Nutrition Expert</h2>
               <div className="pt-4 flex flex-col items-center ">
                 <a href="/about">
                   <Button colour="accent" className='text-primary-300 px-4 max-w-fit' action={() => {}}>Read More</Button>
@@ -41,23 +41,23 @@ export const Home = () => {
             <h2 className="font-bold text-3xl py-4 md:py-10 text-primary-300 text-center">What I Specialize In</h2>
             <div className="w-full grid md:grid-cols-5">
               <Card className="px-2 py-4  flex flex-col justify-center items-center bg-primary-200 m-4">
-                <Image className="py-2 md:py-4" src='/'/>
+                <Image className="py-2 md:py-4 object-scale-down" src='/img/digestion.svg' svgFill="fill-tttt-200"/>
                 <p className="py-2 md:py-4 text-center text-tttt-200 ">Reset Your Digestion System</p>
               </Card>
               <Card className="px-2 py-4 flex flex-col justify-center items-center bg-primary-200 m-4">
-                <Image className="py-2 md:py-4 bg-opacity-100" src='/'/>
+                <Image className="py-2 md:py-4 bg-opacity-100" src='/img/eating-habits.svg'/>
                 <p className="py-2 md:py-4 text-center text-tttt-200 bg-opacity-100">Establish Eating Habits</p>
               </Card>
               <Card className="px-2 py-4 flex flex-col justify-center items-center bg-primary-200 m-4">
-                <Image className="py-2 md:py-4" src='/'/>
+                <Image className="py-2 md:py-4" src='/img/healthy-lifestyle.svg'/>
                 <p className="py-2 md:py-4 text-center text-tttt-200 ">Adopt a Healthy Lifestyle</p>
               </Card>
               <Card className="px-2 py-4 flex flex-col justify-center items-center bg-primary-200 m-4">
-                <Image className="py-2 md:py-4" src='/'/>
+                <Image className="py-2 md:py-4" src='/img/health-goals.svg'/>
                 <p className="py-2 md:py-4 text-center text-tttt-200 ">Set Health Goals</p>
               </Card>
               <Card className="px-2 py-4 flex flex-col justify-center items-center bg-primary-200 m-4">
-                <Image className="py-2 md:py-4" src='/'/>
+                <Image className="py-2 md:py-4" src='/img/wellness-plan.svg'/>
                 <p className="py-2 md:py-4 text-center text-tttt-200 ">Personalized Wellness Plan</p>
               </Card>
             </div>

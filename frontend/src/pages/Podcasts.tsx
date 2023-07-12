@@ -2,7 +2,7 @@ import { PodcastSpotify, PodcastYoutube } from "../components/reusable/IframeHol
 
 export const Podcasts = () => {
   return (
-    <div className="px-6 md:px-12 flex flex-col items-center">
+    <div className="flex flex-col items-center">
         <h2 className='text-3xl font-bold pb-6 text-tttt-200'>Recommended Resources</h2>
 
       <div className="bg-tttt-200 p-6">

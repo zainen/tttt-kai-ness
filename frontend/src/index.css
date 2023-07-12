@@ -28,29 +28,6 @@ body {
 
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #704734;
-  border-radius: 4px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #552b18;
-  border-radius: 3px;
-
-}
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 

@@ -3,6 +3,7 @@ import { Button } from "../reusable/Button";
 import { TextInput } from "../reusable/TextInput";
 
 export const SubscribeContainer = () => {
+  // TODO LATER
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   return (

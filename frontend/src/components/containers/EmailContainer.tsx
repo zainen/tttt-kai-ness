@@ -43,7 +43,7 @@ export const EmailContainer = ({inputClassname, borderColour}: { inputClassname:
     }
   }
   return (
-    <>
+    <div className="flex flex-col items-center h-fit w-2/3 md:w-1/2">
       <h4 className="text-xl font-bold">Let's Connect!</h4>
         <div className="flex flex-col md:flex-col lg:flex-row  justify-between w-full mt-4"> 
           <TextInput required state={firstName} setState={setFirstName} name='first_name' className={`lg:mr-2 ${inputClassname}`} borderColour={borderColour} label="First Name"/> 
@@ -56,7 +56,10 @@ export const EmailContainer = ({inputClassname, borderColour}: { inputClassname:
         <div className="w-full mt-4"> 
           <TextInput required state={message} setState={setMessage} name='message' className={`w-full ${inputClassname}`} borderColour={borderColour} label="Message" textArea={true}/> 
         </div>
-        <Button className={'text-primary-400 px-2 mt-4 text-lg'} action={handleSendEmail}>Submit</Button>
-    </>
+        <div className="w-full flex justify-center">
+
+          <Button className={'text-primary-400 px-2 mt-4 text-lg w-fit'} action={handleSendEmail}>Submit</Button>
+        </div>
+    </div>
   )
 }
