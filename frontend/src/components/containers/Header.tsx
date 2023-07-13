@@ -20,20 +20,20 @@ export const Header = () => {
             </Link>
           <div className="flex pr-2 items-center">
           <nav>
-          <ul className="md:flex text-lg font-semibold">
-            <li className="px-2 drop-shadow-sub-header">
+          <ul className="md:flex text-lg font-semibold pt-2 pr-2">
+            <li className="px-2 drop-shadow-sub-header underline">
               <Link to='/'>Home</Link>
             </li>
-            <li className="px-2 drop-shadow-sub-header">
+            <li className="px-2 drop-shadow-sub-header underline">
               <Link to='/about'>About</Link>
             </li>
-            <li className="px-2 drop-shadow-sub-header">
+            <li className="px-2 drop-shadow-sub-header underline">
               <Link to='/kai'>Kai</Link>
             </li>
             {/* TODO <li className="px-2">
               <Link to='/blogs'>Blogs</Link>
             </li> */}
-            <li className="px-2 drop-shadow-sub-header">
+            <li className="px-2 drop-shadow-sub-header underline">
               <Link to='/podcasts'>Podcasts</Link>
             </li>
             {/* TODO <li className="px-2">

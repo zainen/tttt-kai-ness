@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node ./src/server.ts",
     "dev": "nodemon",
-    "start:prod": "npm run build && ts-node ./dist/src/server.js",
+    "start:prod": "npm run build && node ./dist/src/server.js",
     "build": "npx tsc"
   },
   "author": "",
