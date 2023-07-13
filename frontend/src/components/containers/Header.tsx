@@ -17,7 +17,7 @@ export const Header = () => {
             <h2 className="font-extrabold drop-shadow-header">
               Kai Care & Wellness
             </h2>
-            </Link>
+          </Link>
           <div className="flex pr-2 items-center">
           <nav>
           <ul className="md:flex text-lg font-semibold pt-2 pr-2">

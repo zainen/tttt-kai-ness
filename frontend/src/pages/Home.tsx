@@ -6,6 +6,7 @@ import { Card } from "../components/reusable/Card";
 import { Image } from "../components/reusable/Image";
 import { Section } from "../components/reusable/Section";
 import { ModalPopup } from "../components/containers/Modal";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const [isOpenModal, setIsOpenModal] = useState(false)
@@ -58,9 +59,9 @@ export const Home = () => {
               <h2 className="font-extrabold text-3xl text-tttt-200 text-center drop-shadow-header">Meet Tysia</h2>
               <h2 className="font-semibold text-xl pt-4 text-tttt-300 text-center drop-shadow-sub-header">Health and Wellness Coach | Nutrition Expert</h2>
               <div className="pt-4 flex flex-col items-center ">
-                <a href="/about">
+                <Link to="/about">
                   <Button colour="accent" className='text-primary-300 px-4 max-w-fit drop-shadow-sub-header' action={() => {}}>Read More</Button>
-                </a>
+                </Link>
               </div>
             </div>
             <Image className=" object-scale-down object w-3/4 md:w-1/2" src={`/img/tttt-smile.JPG`} alt="second" />
@@ -92,9 +93,9 @@ export const Home = () => {
               </Card>
             </div>
             <div className=" w-full flex items-center justify-center">
-              <a href="/kai">
+              <Link to="/kai">
                 <Button colour="accent" className="my-4 text-primary-300 px-4 w-fit" action={() => {}}>Learn More</Button>
-              </a>
+              </Link>
             </div>
           </div>
         </Section>
