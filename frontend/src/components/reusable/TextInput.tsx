@@ -27,7 +27,10 @@ export const TextInput = ({
     <>
       {textArea ? (
         <div className={`flex flex-col w-full ${containerClassName}`}>
-          <label className="font-semibold">{label}</label>
+          <label className="font-semibold flex">
+            <p className="pr-2">{label}</p>
+            {required && <p className="font-bold">*</p>}
+          </label>
           <textarea
             required={required}
             name={name}
@@ -38,7 +41,10 @@ export const TextInput = ({
         </div>
       ) : (
         <div className={`flex flex-col w-full ${containerClassName}`}>
-          <label className="font-semibold">{label}</label>
+          <label className="font-semibold flex ">
+            <p className="pr-2">{label}</p>
+            {required && <p className="font-bold">*</p>}
+          </label>
           <input
             required={required}
             name={name}

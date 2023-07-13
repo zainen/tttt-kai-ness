@@ -1,4 +1,3 @@
-import { Card } from "../components/reusable/Card";
 import { Image } from "../components/reusable/Image";
 import { SectionHeader } from "../components/reusable/SectionHeader";
 
@@ -17,7 +16,7 @@ export const Kai = () => {
           </div>
         </SectionHeader>
         <div className="text-primary-400 border-none w-full flex flex-col justify-center items-center md:items-start md:flex-row-reverse text-lg ">
-        <Image className=" object-scale-down object w-3/4 md:w-1/2" src={`/img/food.jpg`} alt="second" />
+        <Image className=" object-scale-down object w-3/4 md:w-1/2" src={`/img/light-through-trees.jpeg`} alt="second" />
 
           <div className="w-3/4 md:w-1/2 py-4 md:px-4 flex flex-col">
             <div className="pb-4 md:pb-10">
@@ -43,7 +42,7 @@ export const Kai = () => {
           </div>
         </div>
         <div className="text-primary-400 border-none w-full flex flex-col justify-center items-center md:items-start md:flex-row text-lg">
-          <Image className=" object-scale-down object w-3/4 md:w-1/2" src={`/img/portrait-holder2.jpg`} alt="second" />
+          <Image className=" object-scale-down object w-3/4 md:w-1/2" src={`/img/tttt-smile.JPG`} alt="second" />
 
           <div className="w-3/4 md:w-1/2 py-4 md:px-4 flex flex-col">
             <div className="pb-4 md:pb-10">

@@ -1,9 +1,10 @@
-import express from 'express';
+import express, {Request} from 'express';
 import path from 'path';
 import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
 import cors from 'cors'
 import 'dotenv/config'
+import { EmailParams } from './types';
 
 const PORT = process.env.PORT || 5000
 
@@ -31,13 +32,11 @@ transporter.verify((error, _success) => {
   }
 });
 
-app.options('/post', (req, res) => {
+app.options('/send-email', (req, res) => {
   res.status(204).json({})
 })
 
-app.post<{}>('/post', async (req, res) => {
-  // console.log(req)
-console.log('received q ')
+app.post('/send-email', async (req: Omit<Request,'body'> & { body: EmailParams }, res) => {
 
   const email = req.body.email
   const message = req.body.message

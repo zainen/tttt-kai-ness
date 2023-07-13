@@ -7,7 +7,6 @@ import { Kai } from "./pages/Kai";
 // import { Blogs } from "./pages/Blogs";
 import { PageNotFound } from "./pages/PageNotFound";
 import { Podcasts } from "./pages/Podcasts";
-import { Booking } from "./pages/Booking";
 
 function App() {
 
@@ -20,7 +19,6 @@ function App() {
             <Route path='/about' element={<About />}/>
             <Route path='/kai' element={<Kai />}/>
             {/* <Route path='blogs' element={<Blogs />}/> */}
-            <Route path='/booking' element={<Booking />} />
             <Route path='/podcasts' element={<Podcasts/>}/>
             {/* <Route path='recipes' element={<Recipes />}/> */}
             <Route path='*' element={<PageNotFound />}/>
