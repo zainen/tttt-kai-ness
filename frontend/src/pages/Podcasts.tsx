@@ -3,9 +3,8 @@ import { PodcastSpotify, PodcastYoutube } from "../components/reusable/IframeHol
 export const Podcasts = () => {
   return (
     <div className="flex flex-col items-center">
-        <h2 className='text-3xl font-bold pb-6 text-tttt-200'>Recommended Resources</h2>
-
       <div className="bg-tttt-200 p-6">
+        <h2 className='text-3xl text-center font-bold py-6 text-primary-300'>Recommended Resources</h2>
 
         <PodcastYoutube 
           url="https://www.youtube.com/embed/133n0BTYXOQ" 
