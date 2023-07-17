@@ -17,6 +17,9 @@ module.exports = function override(config) {
    	new webpack.ProvidePlugin({ 
     	process: 'process/browser', 
       Buffer: ['buffer', 'Buffer'] 
-    }) 
-   ]) 
+    })
+   ])
+   config.devServer = {
+    historyApiFallback: true
+   } 
    return config; }

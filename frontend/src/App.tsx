@@ -21,7 +21,7 @@ function App() {
             {/* <Route path='blogs' element={<Blogs />}/> */}
             <Route path='/podcasts' element={<Podcasts/>}/>
             {/* <Route path='recipes' element={<Recipes />}/> */}
-            <Route path='*' element={<PageNotFound />}/>
+            <Route path='/*' element={<PageNotFound />}/>
           </Route>
         </Routes>
       </BrowserRouter>
